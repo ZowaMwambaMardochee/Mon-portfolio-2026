@@ -38,6 +38,51 @@ header{
 header div a {
     text-decoration:none ;
     font-size: 2.2rem;
-    font-weight: bold;
+    font-weight: bold;4
     color: var(--violet-doux);
+}
+
+ul li{
+    list-style: none;
+    margin-left: 25px;   
+}
+
+ UL { 
+     display: flex;
+
+} 
+ul li A {
+    text-decoration: none;
+    color: var(--gris-fonce);
+   font-weight: 600;
+   font-size:1.1rem;  
+   position: relative;
+   padding: 10px 0 ;
+} 
+ul li a:hover{
+    color: var(--violet-doux);
+}
+
+ul li a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 0%;
+    background-color: var(--violet-doux);
+    transition:width 0.3s ease;
+}
+
+ul li a:hover::after{
+    width:100% ;
+
+}
+
+a.active{
+    color: var(--violet-doux)
+}
+
+a.active::after{
+    width:100%;
 }
