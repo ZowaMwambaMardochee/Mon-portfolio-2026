@@ -1,69 +1,67 @@
 :root {
     --violet-doux: #6C63FF;
-    --violet-fonce:#534EDD;
-    --orange-vif:#FFA726;
-    --gris-tres-fonce:#333;
-    --gris-fonce:#666;
-    --gris-tres-clair:#F8F8F8;
-    --gris-clair:#EEE;
-
+    --violet-fonce: #534EDD;
+    --orange-vif: #FFA726;
+    --gris-tres-fonce: #333;
+    --gris-fonce: #666;
+    --gris-tres-clair: #F8F8F8;
+    --gris-clair: #EEE;
 }
- * {
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
 
-body { 
-    background-color:  var(--gris-tres-clair);
+body {
+    background-color: var(--gris-tres-clair);
     font-family: Roboto, sans-serif;
     line-height: 1.6;
-
 }
 
-header{
+header {
     background-color: white;
     box-shadow: 2px 6px 10px rgba(0, 0, 0, 0.05);
     position: sticky;
-    top:0;
+    top: 0;
     z-index: 100;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 2rem 3rem;
-
 }
 
 header div a {
-    text-decoration:none ;
-    font-size: 2.2rem;
-    font-weight: bold;4
-    color: var(--violet-doux);
-}
-
-ul li{
-    list-style: none;
-    margin-left: 25px;   
-}
-
- UL { 
-     display: flex;
-
-} 
-ul li A {
     text-decoration: none;
-    color: var(--gris-fonce);
-   font-weight: 600;
-   font-size:1.1rem;  
-   position: relative;
-   padding: 10px 0 ;
-} 
-ul li a:hover{
+    font-size: 2.2rem;
+    font-weight: bold;
     color: var(--violet-doux);
 }
 
-ul li a::after{
+ul li {
+    list-style: none;
+    margin-left: 25px;
+}
+
+ul {
+    display: flex;
+}
+
+ul li a {
+    text-decoration: none;
+    color: var(--gris-tres-fonce);
+    font-weight: 600;
+    font-size: 1.1rem;
+    position: relative;
+    padding: 10px 0;
+}
+
+ul li a:hover {
+    color: var(--violet-doux);
+}
+
+ul li a::after {
     content: '';
     position: absolute;
     left: 0;
@@ -71,18 +69,66 @@ ul li a::after{
     height: 3px;
     width: 0%;
     background-color: var(--violet-doux);
-    transition:width 0.3s ease;
+    transition: width 0.3s ease;
 }
 
-ul li a:hover::after{
-    width:100% ;
-
+ul li a:hover::after {
+    width: 100%;
 }
 
-a.active{
-    color: var(--violet-doux)
+a.active {
+    color: var(--violet-doux);
 }
 
-a.active::after{
-    width:100%;
+a.active::after {
+    width: 100%;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    text-align: center;
+    margin: 10rem 2rem;
+}
+
+.hero img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 8px solid var(--violet-doux);
+}
+
+.hero h1 {
+    color: var(--violet-fonce);
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 1.2rem;
+}
+
+.hero p {
+    color: var(--gris-fonce);
+    font-size: 1.3rem;
+    margin-bottom: 1.2rem;
+}
+
+.hero a {
+    text-decoration: none;
+    display: inline-block;
+    background-color: var(--violet-doux);
+    color: white;
+    padding: 15px 30px;
+    border-radius: 50px;
+    text-transform: uppercase;
+    letter-spacing: 1.1px;
+    font-weight: 600;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.hero a:hover {
+    background-color: var(--violet-fonce);
+    transform: translateY(-3px);
 }
