@@ -134,11 +134,10 @@ a.active::after {
 }
 
 .apropos {
-     width: 800px;
-     margin: 6rem auto;
-     text-align: center;
+    width: 800px;
+    margin: 6rem auto;
+    text-align: center;
 }
-
 
 section h2 {
     color: var(--violet-doux);
@@ -146,9 +145,7 @@ section h2 {
     font-weight: 700;
     position: relative;
     text-align: center;
-  
 }
-
 
 section h2::after {
     content: '';
@@ -156,14 +153,15 @@ section h2::after {
     width: 60px;
     height: 4px;
     background-color: var(--violet-doux);
-    margin:1.2rem auto;
+    margin: 1.2rem auto;
     border-radius: 2px;
 }
+
 .apropos p {
     margin-bottom: 2rem;
     color: var(--gris-fonce);
     font-size: 1.3rem;
-     font-size: 1.2rem;
+    font-size: 1.2rem;
 }
 
 .competences table {
@@ -230,4 +228,109 @@ footer a {
 footer a:hover {
     color: var(--orange-vif);
     transform: translateY(-3px);
+}
+
+.projets {
+    padding: 80px 60px;
+    text-align: center;
+}
+
+.projets h1 {
+    color: var(--violet-doux);
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+.projets h1::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: var(--violet-doux);
+    margin: 1rem auto 0;
+    border-radius: 2px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.card {
+    background: white;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.1);
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-bottom: 3px solid var(--violet-doux);
+}
+
+.card-content {
+    padding: 20px;
+    text-align: left;
+}
+
+.card-content h3 {
+    color: var(--violet-doux);
+    margin-bottom: 10px;
+}
+
+.card-content p {
+    font-size: 14px;
+    color: var(--gris-fonce);
+    margin-bottom: 15px;
+}
+
+.tags {
+    margin-bottom: 15px;
+}
+
+.tags span {
+    display: inline-block;
+    background: #f0f0ff;
+    color: var(--violet-doux);
+    padding: 6px 12px;
+    border-radius: 50px;
+    font-size: 12px;
+    margin-right: 6px;
+    font-weight: 500;
+}
+
+/* ⭐ LA LIGNE QUE TU DEMANDAIS */
+.card-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid rgba(0,0,0,0.06);
+    padding-top: 12px;
+    margin-top: 12px;
+}
+
+.card-links a {
+    text-decoration: none;
+    font-size: 14px;
+    color: var(--gris-tres-fonce);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: 0.3s;
+}
+
+.card-links a:hover {
+    color: var(--violet-doux);
 }
