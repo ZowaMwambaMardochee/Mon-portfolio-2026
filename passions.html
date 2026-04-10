@@ -1,19 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mon Portfolio</title>
+
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <header>
-        <div>
-            <a href="">Mon Portfolio</a>
+        <div class="logo">
+            <a href="index.html">Mon Portfolio</a>
         </div>
         <nav>
             <ul>
@@ -25,16 +25,139 @@
             </ul>
         </nav>
     </header>
+
     <main>
-        <h1>Voici mes passions</h1>
+        <h1 class="title">Mes Passions</h1>
+        <div class="underline"></div>
+
+        <section class="cards">
+
+            <!-- 1. Gaming -->
+            <div class="card">
+                <div class="card-img">
+                 <img src="Image/gaming.jpg" alt="Profil">  
+                </div>
+                <div class="card-content">
+                    <h3>Gaming & E-Sport</h3>
+                    <p>Compétition sur EA Sports FC Mobile et PUBG Mobile</p>
+                    <div class="tags">
+                        <span class="tag">Mobile</span>
+                        <span class="tag">E-Sport</span>
+                        <span class="tag">FC24</span>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#"><i class="fa-brands fa-github"></i> Code</a>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i> Démo</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2. Anime -->
+            <div class="card">
+                <div class="card-img">
+                    <img src="Image/anime & manga.jpg" alt="Profil"> 
+                </div>
+                <div class="card-content">
+                    <h3>Anime & Manga</h3>
+                    <p>Analyse de Kuroko Basket et storytelling</p>
+                    <div class="tags">
+                        <span class="tag">Analyse</span>
+                        <span class="tag">Manga</span>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#"><i class="fa-brands fa-github"></i> Code</a>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i> Démo</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3. Basketball -->
+            <div class="card">
+                <div class="card-img">
+                    <img src="Image/Football.jpg" alt="Profil"> 
+                </div>
+                <div class="card-content">
+                    <h3>Football</h3>
+                    <p>Suivi de foot et pratique sur le terrain</p>
+                    <div class="tags">
+                        <span class="tag">Foot</span>
+                        <span class="tag">Sport</span>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#"><i class="fa-brands fa-github"></i> Code</a>
+                        <span class="status"><i class="fa-solid fa-circle-stop"></i> Bientôt</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4. Trading -->
+            <div class="card">
+                <div class="card-img">
+                <img src="Image/Trading & forex.jpg" alt="Profil">    
+                </div>
+                <div class="card-content">
+                    <h3>Trading & Forex</h3>
+                    <p>Analyse technique avec MetaTrader</p>
+                    <div class="tags">
+                        <span class="tag">Finance</span>
+                        <span class="tag">MT5</span>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#"><i class="fa-brands fa-github"></i> Code</a>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i> Démo</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 5. Data -->
+            <div class="card">
+                <div class="card-img">
+                  <img src="Image/DATA.jpg" alt="Profil">    
+                </div>
+                <div class="card-content">
+                    <h3>Gestion de Données</h3>
+                    <p>Python, SQL et structuration de données</p>
+                    <div class="tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">SQL</span>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#"><i class="fa-brands fa-github"></i> Code</a>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i> Démo</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 6. Dev Web -->
+            <div class="card">
+                <div class="card-img">
+                <img src="Image/Programmaton web.jpg" alt="Profil">    
+                </div>
+                <div class="card-content">
+                    <h3>Développement Web</h3>
+                    <p>HTML, CSS, JS et interfaces modernes</p>
+                    <div class="tags">
+                        <span class="tag">UI/UX</span>
+                        <span class="tag">Design</span>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#"><i class="fa-solid fa-pen-nib"></i> Design</a>
+                        <a href="#"><i class="fa-solid fa-eye"></i> Aperçu</a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
     </main>
-    <footer>
-        <p>&copy; 2026 Zowa. Tous droits réservés.</p>
-        <div>
-            <a href=""><i class="fa-brands fa-github"></i></a>
-            <a href=""><i class="fa-brands fa-linkedin"></i></a>
-            <a href=""><i class="fa-brands fa-x-twitter"></i></a>
-        </div>
-    </footer>
+<footer>
+    <p>&copy; 2026 Zowa. Tous droits réservés.</p>
+
+    <div class="socials">
+        <a href="#"><i class="fa-brands fa-github"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+    </div>
+</footer>
+
 </body>
 </html>

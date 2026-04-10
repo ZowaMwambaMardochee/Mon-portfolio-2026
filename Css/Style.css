@@ -334,3 +334,377 @@ footer a:hover {
 .card-links a:hover {
     color: var(--violet-doux);
 }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background: white;
+}
+
+header .logo a {
+    font-size: 24px;
+    font-weight: bold;
+    color: #6c63ff;
+    text-decoration: none;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav ul li a.active, nav ul li a:hover {
+    color: #6c63ff;
+    border-bottom: 2px solid #6c63ff;
+    padding-bottom: 5px;
+}
+
+/* Main Title */
+main {
+    padding: 50px 8%;
+    text-align: center;
+}
+
+.title {
+    color: #6c63ff;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.underline {
+    width: 50px;
+    height: 4px;
+    background: #6c63ff;
+    margin: 0 auto 50px;
+}
+
+/* Grid Layout */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+/* Card Style */
+.card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    text-align: left;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-img img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #444;
+}
+
+.card-content p {
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+/* Tags/Badges */
+.tags {
+    margin-bottom: 20px;
+}
+
+.tag {
+    background: #f0efff;
+    color: #6c63ff;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    margin-right: 5px;
+    font-weight: bold;
+}
+
+/* Footer of the card */
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #eee;
+    padding-top: 15px;
+}
+
+.card-footer a, .status {
+    text-decoration: none;
+    color: #333;
+    font-size: 0.85rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.status { color: #888; }
+
+/* Footer site */
+footer {
+    background: #6c63ff;
+    color: white;
+    text-align: center;
+    padding: 40px 0;
+    margin-top: 50px;
+}
+
+.social-icons {
+    margin-top: 15px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 1.5rem;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #f5f7fa;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: white;
+}
+
+.logo a {
+    font-weight: 900;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+nav a.active {
+    color: #007bff;
+}
+
+/* MAIN */
+.contact-main {
+    padding: 50px;
+}
+
+.contact-title {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 28px;
+}
+
+/* CONTAINER */
+.contact-container {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+/* BOXES */
+.info-box,
+.form-box {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    width: 350px;
+}
+
+/* INFO */
+.info-box h2,
+.form-box h2 {
+    margin-bottom: 20px;
+}
+
+.info-detail {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    gap: 10px;
+}
+
+.info-detail i {
+    color: #007bff;
+}
+
+/* BUTTONS */
+.contact-btns {
+    margin-top: 20px;
+}
+
+.btn-item {
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    text-align: center;
+    color: white;
+}
+
+.whatsapp-btn {
+    background: #25D366;
+}
+
+.facebook-btn {
+    background: #1877F2;
+}
+
+/* FORM */
+.field {
+    margin-bottom: 15px;
+}
+
+.field label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.field input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background: #007bff;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* FOOTER */
+footer {
+    margin-top: 50px;
+    text-align: center;
+    padding: 20px;
+    background: rgb(102, 74, 241);
+}
+
+.social-icons a {
+    margin: 0 10px;
+    color: black;
+}
+
+/* 1. Force les 3 cartes à être sur la même ligne */
+.cards-wrapper {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+
+.card-item {
+    flex: 1; /* Donne la même largeur aux 3 cartes */
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden; /* Coupe ce qui dépasse des bords arrondis */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* 3. LE SECRET POUR DES PHOTOS PROPRES */
+.card-image {
+    width: 100%;
+    height: 160px; /* Force une hauteur fixe pour toutes les photos */
+    overflow: hidden;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Recadre l'image automatiquement sans la déformer */
+    display: block;
+}
+
+/* 4. Texte à l'intérieur */
+.card-text {
+    padding: 20px;
+}
+
+.card-text h3 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: #1a237e;
+}
+
+.card-text p {
+    font-size: 0.85rem;
+    color: #666;
+    line-height: 1.4;
+    margin-bottom: 15px;
+}
+
+.lien-voir {
+    text-decoration: none;
+    font-weight: bold;
+    color: #1a237e;
+    font-size: 0.8rem;
+}

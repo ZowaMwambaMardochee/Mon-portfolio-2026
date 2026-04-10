@@ -5,16 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mon Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <div>
-            <a href="">Mon Portfolio</a>
-        </div>
+        <div><a href="index.html">Mon Portfolio</a></div>
         <nav>
             <ul>
                 <li><a href="index.html">Accueil</a></li>
@@ -25,15 +21,65 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <h1>Voici mon divertissement</h1>
+
+    <main class="divert-container">
+        <!-- Section "Contenus à l'Honneur" -->
+        <section class="en-tete-section">
+            <h2 class="titre-bleu">Contenus à l'Honneur</h2>
+        </section>
+
+        <div class="cards-wrapper">
+            <!-- Bloc Gaming -->
+            <section class="card-item">
+                <div class="card-image">
+                 <img src="Image/JEUX.jpg" alt="Profil">    
+                </div>
+                <div class="card-text">
+                    <h3>Gaming Zone</h3>
+                    <p>FC Mobile, stats et mercato pour optimiser mon équipe de rêve.</p>
+                    <a href="#" class="lien-voir">VOIR <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </section>
+
+            <!-- Bloc Basketball -->
+            <section class="card-item">
+                <div class="card-image">
+                <img src="Image/Football.jpg" alt="Profil">
+                </div>
+                <div class="card-text">
+                    <h3>Footbball Life</h3>
+                    <p>Suivi du football, analyses des scores et but de Messi.</p>
+                    <a href="#" class="lien-voir">VOIR <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </section>
+
+        <hr class="separation">
+
+        <!-- Section "Tableau de Bord" -->
+        <section class="dashboard-section">
+            <h2 class="titre-bleu">Tableau de Bord</h2>
+            <div class="stats-grid">
+                <div class="stat-box">
+                    <i class="fa-solid fa-gamepad icon-g"></i>
+                    <p>Gaming 1.5M fans <span class="percent pos">18% •</span></p>
+                </div>
+                <div class="stat-box">
+                    <i class="fa-solid fa-Football icon-b"></i>
+                    <p>Football 20 Matchs <span class="percent neg">5% •</span></p>
+                </div>
+                <div class="stat-box">
+                    <i class="fa-solid fa-chart-line icon-t"></i>
+                </div>
+            </div>
+        </section>
     </main>
+
     <footer>
-        <p>&copy; 2026 Zowa. Tous droits réservés.</p>
-        <div>
-            <a href=""><i class="fa-brands fa-github"></i></a>
-            <a href=""><i class="fa-brands fa-linkedin"></i></a>
-            <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+        <p>&copy; 2026 Mr zowa. Tous droits réservés.</p>
+        <div class="reseaux">
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
         </div>
     </footer>
 </body>
